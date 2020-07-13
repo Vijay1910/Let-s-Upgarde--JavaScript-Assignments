@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <title> 
+        print Date Format||LET'S UPGRADE JAVASCRIPT
+    </title> 
+<body>
+    <h2>Javascript Day 2 assignment </h2>
+
+
+
+<script>
+var today = new Date();
+var dd = today.getDate();
+
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+today = mm+'-'+dd+'-'+yyyy;
+document.writeln(today);
+
+today = mm+'-'+dd+'-'+yyyy;
+document.writeln(today);
+
+ document.writeln("Next Set");
+today = mm+'/'+dd+'/'+yyyy;
+document.writeln(today);
+
+today = dd+'/'+mm+'/'+yyyy;
+document.writeln(today);
+</script>
+
+</body>
+</html>
